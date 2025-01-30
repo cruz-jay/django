@@ -18,9 +18,6 @@ ALLOWED_HOSTS = ["*"]
 SECURE_SSL_REDIRECT = False
 SECURE_PROXY_SSL_HEADER = None
 
-# Add debug print statements
-print("ALLOWED_HOSTS:", ALLOWED_HOSTS)
-print("CORS_ALLOWED_ORIGINS:", CORS_ALLOWED_ORIGINS)
 
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",  # Move to top
@@ -181,3 +178,10 @@ SECURE_SSL_REDIRECT = False
 SECURE_PROXY_SSL_HEADER = None
 SESSION_COOKIE_SECURE = False
 CSRF_COOKIE_SECURE = False
+
+
+
+
+# Add debug print statements
+print("ALLOWED_HOSTS:", ALLOWED_HOSTS)
+print("CORS_ALLOWED_ORIGINS:", CORS_ALLOWED_ORIGINS)
