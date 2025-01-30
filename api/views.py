@@ -114,6 +114,15 @@ class CreateUserView(generics.CreateAPIView):
     serializer_class = UserSerializer
     permission_classes = [AllowAny]
 
+    def create(self, request, *args, **kwargs):
+        try:
+            print(f"Received registration data: {request.data}")  # Debug log
+            response = super().create(request, *args, **kwargs)
+            print("User created successfully")
+            return response
+        except Exception as e:
+            print(f"Error creating user: {str(e)}")  # Debug log
+            raise
 
 
 class FacultyExamListView(generics.ListAPIView):
