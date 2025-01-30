@@ -8,5 +8,5 @@ pytz==2024.1
 sqlparse==0.4.4
 psycopg2-binary==2.9.9
 python-dotenv==1.0.0
-gunicorn==21.2.0    # Add this for production server
-whitenoise==6.6.0   # Add this for static files
+gunicorn==21.2.0
+whitenoise==6.6.0
